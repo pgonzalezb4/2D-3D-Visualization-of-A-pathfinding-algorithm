@@ -146,7 +146,7 @@ function heuristic(a, b) {
     return d;
 }
 
-var t = 0.06; // Parámetro modificable para comparar rendimientos. [0.03 - 0.06]
+var t = 0.06; // Parámetro modificable para comparar rendimientos. [0.04 - 0.09]
 var cols = Math.floor(screen.width*t); 
 var rows = Math.floor(screen.height*t);
 
