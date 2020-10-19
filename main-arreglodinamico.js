@@ -170,7 +170,7 @@ function Spot(i, j) {
     this.previous = undefined;
     this.wall = false;
 
-    if (random(1) < 7*t) {
+    if (random(1) < 6*t) {
         this.wall = true;
     }
 
@@ -258,6 +258,7 @@ function draw() {
         if (current == end) {
             noLoop();
             console.log("Camino encontrado, trazando ruta...");
+            parar();
         }
         openSet.dequeue();
         closedSet.push(current);
