@@ -1,3 +1,43 @@
+// CRONOMETRO //
+
+window.onload = function() {
+    empezar();
+    reloj = document.getElementById("reloj");
+    var marcha = 0;
+    var cro = 0;
+}
+
+function empezar() {
+    emp=new Date() 
+    elcrono=setInterval(tiempo,10);
+    marcha=1 
+}
+        
+function tiempo() { 
+    actual=new Date();
+    cro=actual-emp;
+    cr=new Date();
+    cr.setTime(cro); 
+    cs=cr.getMilliseconds();
+    cs=cs/10;
+    cs=Math.round(cs);
+    sg=cr.getSeconds();
+    mn=cr.getMinutes();
+    ho=cr.getHours()-1; 	 
+    if (cs<10) {cs="0"+cs;} 
+    if (sg<10) {sg="0"+sg;} 
+    if (mn<10) {mn="0"+mn;} 
+
+    reloj.innerHTML=mn+"m "+sg+"s "+cs+"ms"; 
+}
+
+function parar() { 
+    clearInterval(elcrono);
+    marcha=0;
+}
+
+// CRONOMETRO //
+
 ////////////////////////////////////////// IMPLEMENTACION OPENSET CON ARREGLO DINAMICO //////////////////////////////////////////
 
 function OpenSetDA(){
