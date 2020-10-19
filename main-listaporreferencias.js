@@ -165,7 +165,7 @@ function Spot(i, j) {
     this.previous = undefined;
     this.wall = false;
 
-    if (random(1) < 6*t) {
+    if (random(1) < 6*t) { // Cuando los obstaculos NO dependen de t: "if (random(1) < 0.2)", caso contrario: "if (random(1) < 6*t)"
         this.wall = true;
     }
 
