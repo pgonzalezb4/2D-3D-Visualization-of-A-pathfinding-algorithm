@@ -120,7 +120,6 @@ function LinkedListGeneric() {
         }
     }
 
-    /* No sirve */
     this.set = function(index, node) {
         if (index == 0) {
             this.head = node;
