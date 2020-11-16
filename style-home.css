@@ -1,0 +1,49 @@
+html, body {
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+#titulo {
+    margin-top:50px;
+    text-align:center;
+}
+
+#caja {
+    margin-top:60px;
+    text-align:center;
+    padding-left:12%;
+    position:relative;
+    display:inline-block;
+}
+
+#imagen {
+    display:inline-block;
+    position:relative;
+    padding-left:6%;
+}
+
+#diagonal {
+    display:block;
+    text-align:center;
+    width:500px;
+}
+
+#no-diagonal {
+    display:block;
+    width:500px;
+}
+
+#enlace {
+    color:black;
+}
+
+h2 {
+    border-bottom:1px solid black;
+    padding:15px;
+}
+
+h4 {
+    border-bottom:1px solid black;
+    width:200px;
+    padding:10px;
+}
