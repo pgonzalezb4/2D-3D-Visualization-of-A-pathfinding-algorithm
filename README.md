@@ -1,2 +1,2 @@
 # A-Star
-A* Algorithm implemented in Javascript with Ordered Linked List and Ordered Dynamic Array.
+A* Algorithm implemented with Javascript using priority queues implemented with a min-heap using dynamic arrays and linked lists for performance comparison.
